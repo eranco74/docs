@@ -10,7 +10,7 @@ This (evolving) document establishes the policy for how all contributors, whethe
 
 1. **Human accountability is non-negotiable.** Every contribution has a human owner who understands, can explain, and takes responsibility for the code - regardless of how it was produced.
 
-2. **No contributor is blocked.** AI tools are encouraged but never required. Contributors without access to Claude, Jira, or other Red Hat-internal tooling can participate fully through standard open source workflows (GitHub issues, PRs, mailing lists). As our AI SDLC matures, we will revisit this principle to ensure it balances inclusivity with our ability to adopt the most effective workflows.
+2. **No contributor is blocked.** AI tools are encouraged but never required. Contributors without access to Claude, Jira, or other Red Hat-internal tooling can participate fully through standard open-source workflows (GitHub issues, PRs, mailing lists). As our AI SDLC matures, we will revisit this principle to ensure it balances inclusivity with our ability to adopt the most effective workflows.
 
 3. **Validation is deterministic.** No matter how far we push AI integration, one boundary remains non-negotiable: builds, tests, and CI checks must be reproducible without AI tools. This ensures we move fast without losing trust. AI helps produce code and reviews, but deterministic tests verify correctness - fundamentally different activities with distinct reliability requirements.
 
@@ -25,7 +25,7 @@ This (evolving) document establishes the policy for how all contributors, whethe
 
 ### How we keep OSAC accessible
 
-- **No AI-specific dependencies in CI/CD.** The build, test, and lint pipelines use standard open source tooling. No step requires an AI tool to complete.
+- **No AI-specific dependencies in CI/CD.** The build, test, and lint pipelines use standard open-source tooling. No step requires an AI tool to complete.
 - **CLAUDE.md is documentation, not a gate.** The CLAUDE.md files in our repos serve as developer documentation that happens to also configure AI agents. They document architecture, conventions, and commands that benefit all contributors.
 - **Enhancement proposals are human-readable.** Design documents in `enhancement-proposals/` are written for human review and discussion, regardless of how the initial draft was produced.
 
