@@ -40,7 +40,8 @@ To ensure no contributor is disadvantaged:
 - All project decisions and discussions happen on GitHub
 - Contributors can reproduce builds, run tests, and submit PRs without any AI tooling
 - No build, test, or deployment specification may require AI-specific tools to execute
-- Workflow artifacts (.planning/ directories, GSD state files) provide useful context but aren’t required for contribution
+- Workflow artifacts (`.planning/` directories, GSD state files) provide useful context but aren’t required for contribution
+- **Workflow state files must not be committed.** Session-specific artifacts (`STATE.md`, `SESSION*.md`, `*.lock`, `HANDOFF*.md`, `*.gsd`) vary per developer and cause merge conflicts. Each repo’s `.gitignore` should exclude these. Curated reference documents (e.g., architecture analysis under `.planning/codebase/`) may be committed deliberately when they have lasting value for the team
 
 ## AI Disclosure Requirements
 
